@@ -20,7 +20,7 @@ struct Weather: Codable {
 struct Info: Codable {
     var tzinfo: TzInfo
     var url: String
-
+    
     struct TzInfo: Codable {
         var name: String
         var abbr: String

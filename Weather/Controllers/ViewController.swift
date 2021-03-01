@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         setUpTableView()
         setUpSearchBar()
         loadWeather()
-        show()
+        showDescription()
     }
     
     
@@ -93,6 +93,7 @@ class ViewController: UIViewController {
             searchBar.heightAnchor.constraint(equalToConstant: 50)
         ])
     }
+    
     private func setupSearchBar(searchBar : UISearchBar) {
         searchBar.setPlaceholderTextColorTo(color: .skyColor)
     }
@@ -116,6 +117,7 @@ class ViewController: UIViewController {
                                                feels_like: data.fact.feels_like,
                                                wind_speed: data.fact.wind_speed)
                     
+                    vc.data = weatherCity
                     self?.present(vc, animated: true, completion: nil)
                 }
                 

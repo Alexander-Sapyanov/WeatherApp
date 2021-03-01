@@ -11,8 +11,8 @@ class DescripotionViewController: UIViewController {
     
     var data: CityData?
     let startModel = StartModel.shared
-
-
+    
+    
     var nameLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -101,7 +101,7 @@ class DescripotionViewController: UIViewController {
             feelLike.topAnchor.constraint(equalTo: descrLabel.bottomAnchor, constant: 10),
             feelLike.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 50),
             
-           
+            
             
             windSpeed.topAnchor.constraint(equalTo: feelLike.bottomAnchor, constant: 10),
             windSpeed.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 50)

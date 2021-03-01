@@ -49,7 +49,7 @@ class CitiesTableViewCell: UITableViewCell {
         contentView.layoutMargins = UIEdgeInsets(top: 15, left: 3, bottom: 15, right: 3)
         addViews()
     }
-
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

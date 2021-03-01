@@ -9,8 +9,8 @@ import UIKit
 
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-           return 108
-     }
+        return 108
+    }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = DescripotionViewController()
         vc.data = citiesList[indexPath.row]
